@@ -56,5 +56,61 @@ Feel free to fork the repository and submit a pull request if you'd like to cont
 ## Issues
 If you encounter any issues or have suggestions for enhancements, please create an issue on the GitHub repository.
 
+<div align="center">
+<h3>Developed with the software and tools below</h3>
+<p align="center">
+<img style="width: 30px" src="https://img.icons8.com/?size=1x&id=108784&format=png" />
+<img style="width: 30px" src="https://img.icons8.com/?size=48&id=20909&format=png" />
+<img style="width: 30px" src="https://img.icons8.com/?size=80&id=eETV3RNHVrWA&format=png" />
+<img style="width: 30px" src="https://img.icons8.com/?size=48&id=CIAZz2CYc6Kc&format=png" />
+<img style="width: 30px" src="https://img.icons8.com/?size=48&id=dJjTWMogzFzg&format=png" />
+<img style="width: 30px" src="https://img.icons8.com/?size=80&id=joYylRnVLgzY&format=png" />
+<img style="width: 30px" src="https://img.icons8.com/?size=48&id=hsPbhkOH4FMe&format=png" />
+</p>
+</div>
+
+## 🔍 Button
+
+Customized button for uniformity in the code base
+
+
+## Props
+
+### children (ReactNode, required)
+Responsible for displaying any thing inside the Button Tag
+
+#### onClick (Callback, optional)
+Icon to be displayed next to the current selected breadcrumb item.
+Example: "icon-park:right"
+
+
+##### Props example:
+
+bash
+<Button onClick={...}> Select </Button>
+
+
+
+## 📌 DragAndDrop
+
+Customized Component for Drag and Drop input.
+
+
+## Props
+
+### onDrop (Callback)
+When user drops a file.
+
+### onChange (Callback,)
+Called when user select a file
+
+- More events can be created for future development.
+
+## 📌 PDFRendered
+
+Responsible for displaying/rendering the PDF
+
+
+
 Happy Document Viewing!
 
