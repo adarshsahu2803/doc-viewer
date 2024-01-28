@@ -1,56 +1,11 @@
 import React from 'react';
 import './App.css';
-import { PdfViewerComponent, Navigation, Magnification, TextSelection, TextSearch, Print, Annotation, DynamicStampItem, SignStampItem, StandardBusinessStampItem, FormDesigner, FormFields } from '@syncfusion/ej2-react-pdfviewer';
-import { ToolbarComponent, ItemsDirective, ItemDirective, ClickEventArgs, MenuComponent } from '@syncfusion/ej2-react-navigations';
+import { PdfViewerComponent, Navigation, Magnification, TextSelection, TextSearch, Print, Annotation, FormDesigner, FormFields } from '@syncfusion/ej2-react-pdfviewer';
+import { ToolbarComponent, ItemsDirective, ItemDirective, ClickEventArgs } from '@syncfusion/ej2-react-navigations';
 PdfViewerComponent.Inject(Navigation, Magnification, TextSelection, TextSearch, Print, Annotation, FormDesigner, FormFields);
 
 function App() {
   let viewer: PdfViewerComponent;
-  let matchCase: boolean;
-  const data = [
-    {
-      iconCss: 'e-pv-stamp-icon',
-      items: [
-        {
-          text: 'Dynamic',
-          items: [
-            { text: 'Revised', id: 'Dynamic' },
-            { text: 'Reviewed', id: 'Dynamic' },
-            { text: 'Received', id: 'Dynamic' },
-            { text: 'Confidential', id: 'Dynamic' },
-            { text: 'Approved', id: 'Dynamic' },
-            { text: 'Not Approved', id: 'Dynamic' },
-          ],
-        },
-        {
-          text: 'Sign Here',
-          items: [
-            { text: 'Witness', id: 'Sign Here' },
-            { text: 'Initial Here', id: 'Sign Here' },
-            { text: 'Sign Here', id: 'Sign Here' },
-            { text: 'Accepted', id: 'Sign Here' },
-            { text: 'Rejected', id: 'Sign Here' }],
-        },
-        {
-          text: 'Standard Business',
-          items: [
-            { text: 'Approved', id: 'Standard Business' },
-            { text: 'Not Approved', id: 'Standard Business' },
-            { text: 'Draft', id: 'Standard Business' },
-            { text: 'Final', id: 'Standard Business' },
-            { text: 'Completed', id: 'Standard Business' },
-            { text: 'Confidential', id: 'Standard Business' },
-            { text: 'For Public Release', id: 'Standard Business' },
-            { text: 'Not For Public Release', id: 'Standard Business' },
-            { text: 'For Comment', id: 'Standard Business' },
-            { text: 'Void', id: 'Standard Business' },
-            { text: 'Preliminary Results', id: 'Standard Business' },
-            { text: 'Information Only', id: 'Standard Business' }
-          ],
-        },
-      ],
-    },
-  ];
 
   function currentPageNumberTemplate() {
     return (<div><input type='text' id='currentPage' style={{ width: '46px', height: '28px', textAlign: 'center' }} onKeyDown={onChangeCurrentPageNumber} /></div>);
@@ -365,19 +320,19 @@ function App() {
         {
           viewer.print.print();
           let editAnnotationToolbarElement: HTMLElement = document.getElementById('editAnnotationToolbar') as HTMLElement;
-          if (editAnnotationToolbarElement.style.display == "block")
+          if (editAnnotationToolbarElement.style.display === "block")
             editAnnotationToolbarElement.style.display = "none";
 
           let textSearchToolbarElement: HTMLElement = document.getElementById('textSearchToolbar') as HTMLElement;
-          if (textSearchToolbarElement.style.display == "block")
+          if (textSearchToolbarElement.style.display === "block")
             textSearchToolbarElement.style.display = "none";
 
           let signatureToolbarElement: HTMLElement = document.getElementById('SignatureToolbar') as HTMLElement;
-          if (signatureToolbarElement.style.display == "block")
+          if (signatureToolbarElement.style.display === "block")
             signatureToolbarElement.style.display = "none";
 
           let formFieldToolbarElement: HTMLElement = document.getElementById('formFieldToolbar') as HTMLElement;
-          if (formFieldToolbarElement.style.display == "block") {
+          if (formFieldToolbarElement.style.display === "block") {
             formFieldToolbarElement.style.display = "none";
             viewer.designerMode = false;
           }
@@ -386,19 +341,19 @@ function App() {
       case 'download':
         {
           let editAnnotationToolbarElement: HTMLElement = document.getElementById('editAnnotationToolbar') as HTMLElement;
-          if (editAnnotationToolbarElement.style.display == "block")
+          if (editAnnotationToolbarElement.style.display === "block")
             editAnnotationToolbarElement.style.display = "none";
 
           let textSearchToolbarElement: HTMLElement = document.getElementById('textSearchToolbar') as HTMLElement;
-          if (textSearchToolbarElement.style.display == "block")
+          if (textSearchToolbarElement.style.display === "block")
             textSearchToolbarElement.style.display = "none";
 
           let signatureToolbarElement: HTMLElement = document.getElementById('SignatureToolbar') as HTMLElement;
-          if (signatureToolbarElement.style.display == "block")
+          if (signatureToolbarElement.style.display === "block")
             signatureToolbarElement.style.display = "none";
 
           let formFieldToolbarElement: HTMLElement = document.getElementById('formFieldToolbar') as HTMLElement;
-          if (formFieldToolbarElement.style.display == "block") {
+          if (formFieldToolbarElement.style.display === "block") {
             formFieldToolbarElement.style.display = "none";
             viewer.designerMode = false;
           }
