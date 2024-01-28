@@ -1,8 +1,10 @@
-# Document Viewer
+<h1> Document Viewer </h1>
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9c6f6484-7c7f-406a-ae2b-9be0550bfeee/deploy-status)](https://app.netlify.com/sites/document-viewer-adarsh/deploys)
 
 Welcome to the Document Viewer project! This web application allows users to view and interact with documents online. You can find the live demo [here](https://document-viewer-adarsh.netlify.app/).
 
-## Features
+# Features
 
 ### 1. Navigate to Any Page
 Easily navigate through multi-page documents. Whether your document has 5 pages or more, you can jump to any specific page with ease.
@@ -25,10 +27,15 @@ Efficiently search for specific keywords within the document. The text search fe
 ### 7. Upload Local Files
 Users can seamlessly upload documents from their local directory. This feature enables you to view and interact with your own files directly within the Document Viewer.
 
-### 8. 8. Drag and Drop
+### 8. Drag and Drop
 Easily upload documents by dragging and dropping them onto the application. This intuitive feature enhances the user experience by providing a simple and convenient way to add files.
 
-## Getting Started
+
+# Live Demo
+Check out the live demo of the Document Viewer at https://document-viewer-adarsh.netlify.app/.
+
+
+# Getting Started
 
 To run the project locally, follow these steps:
 
@@ -47,27 +54,8 @@ To run the project locally, follow these steps:
    npm run dev
 ```
 
-## Live Demo
-Check out the live demo of the Document Viewer at https://document-viewer-adarsh.netlify.app/.
 
-## Contributing
-Feel free to fork the repository and submit a pull request if you'd like to contribute to this project. We welcome any improvements or additional features!
-
-## Issues
-If you encounter any issues or have suggestions for enhancements, please create an issue on the GitHub repository.
-
-<div align="center">
-<h3>Developed with the software and tools below</h3>
-<p align="center">
-<img style="width: 30px" src="https://img.icons8.com/?size=1x&id=108784&format=png" />
-<img style="width: 30px" src="https://img.icons8.com/?size=48&id=20909&format=png" />
-<img style="width: 30px" src="https://img.icons8.com/?size=80&id=eETV3RNHVrWA&format=png" />
-<img style="width: 30px" src="https://img.icons8.com/?size=48&id=CIAZz2CYc6Kc&format=png" />
-<img style="width: 30px" src="https://img.icons8.com/?size=48&id=dJjTWMogzFzg&format=png" />
-<img style="width: 30px" src="https://img.icons8.com/?size=80&id=joYylRnVLgzY&format=png" />
-<img style="width: 30px" src="https://img.icons8.com/?size=48&id=hsPbhkOH4FMe&format=png" />
-</p>
-</div>
+# Components
 
 ## 🔍 Button
 
@@ -110,7 +98,4 @@ Called when user select a file
 
 Responsible for displaying/rendering the PDF
 
-
-
-Happy Document Viewing!
 
