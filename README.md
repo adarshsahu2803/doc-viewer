@@ -80,7 +80,6 @@ bash
 
 
 ## 📌 DragAndDrop
-
 Customized Component for Drag and Drop input.
 
 
@@ -95,7 +94,6 @@ Called when user select a file
 - More events can be created for future development.
 
 ## 📌 PDFRendered
-
 Responsible for displaying/rendering the PDF
 
 
